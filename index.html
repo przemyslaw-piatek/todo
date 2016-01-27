@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Shopping list</title>
+	</head>
+	<body>
+		<input type="text" placeholder="Add items to list" id="listInput" autofocus>
+		<button id="addItemBtn">Add</button>
+		
+		<ul id="listContainer">
+		</ul>
+
+		<p><span id="itemsCount">0 items</span> in list</p>
+
+		<script type="text/template" id="itemTemplate"><li class="${id}">${content} <button data-id="${id}">Delete</button></li></script>
+	
+		<script src="js/model.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
